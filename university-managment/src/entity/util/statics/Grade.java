@@ -1,4 +1,4 @@
-package entity.util;
+package entity.util.statics;
 
 public enum Grade {
 
