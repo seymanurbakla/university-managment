@@ -1,6 +1,9 @@
 package entity.user;
 
+import entity.course.Lecture;
 import entity.util.statics.*;
+
+import java.util.ArrayList;
 
 
 public class User {
@@ -8,26 +11,30 @@ public class User {
     private String name;
     private String surname;
     private String mail;
-    private Type type;
+    private Rank rank;
     private  int age;
     private long userId;
     private String password;
     private Grade grade;
     private Degree degree;
     private School school;
+    private Department department;
+    private ArrayList<Lecture> lectures;
     //TODO department bilgisi ve ders listesi eklenecek.
 
-    public User(String name,String surname,String mail,Type type,int age, long userId,String password,Grade grade,Degree degree,School school){
+    public User(String name, String surname, String mail, Rank rank, int age, long userId, String password, Grade grade, Degree degree, School school,Department department,ArrayList<Lecture> lectures){
         this.setName(name);
         this.setSurname(surname);
         this.setMail(mail);
-        this.setType(type);
+        this.setRank(rank);
         this.setAge(age);
         this.setUserId(userId);
         this.setPassword(password);
         this.setGrade(grade);
         this.setDegree(degree);
         this.setSchool(school);
+        this.setDepartment(department);
+
     }
 
     public String getName() {
@@ -53,12 +60,12 @@ public class User {
         this.mail = mail;
     }
 
-    public Type getType() {
-        return type;
+    public Rank getRank() {
+        return rank;
     }
 
-    public void setType(Type type) {
-        this.type = type;
+    public void setRank(Rank rank) {
+        this.rank = rank;
     }
 
     public int getAge() {
@@ -107,5 +114,12 @@ public class User {
 
     public void setSchool(School school) {
         this.school = school;
+    }
+
+    public Department getDepartment() {
+        return department;
+    }
+    public void setDepartment(Department department) {
+        this.department = department;
     }
 }
