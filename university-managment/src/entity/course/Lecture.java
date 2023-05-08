@@ -5,6 +5,7 @@ import entity.util.statics.School;
 
 public class Lecture {
     //Ders bilgilerini içeren sınıf
+    //TODO bu sınıf tamamlanacak.
     private String name;
     private String code;
     private String lecturerName;

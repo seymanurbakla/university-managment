@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public enum School {
-
+    //Fakülte bilgilerini içeren enum.
     BUSINESS("işletme",new ArrayList<Department>(Arrays.asList(Department.BUSINESS,Department.INTERNATIONAL_TRADE_AND_BUSINESS,Department.MANAGEMENT_INFORMATION_SYSTEM,Department.FINANCE_AND_BANKING))),
 
     DENTISTRY("diş",new ArrayList<Department>(Arrays.asList(Department.DENTISTRY))),

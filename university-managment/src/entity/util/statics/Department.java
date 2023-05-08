@@ -1,6 +1,7 @@
 package entity.util.statics;
 
 public enum Department {
+    //Bölüm bilgilerini içeren enum
     MANAGEMENT_INFORMATION_SYSTEM("Yönetim Bilişim Sistemleri"),
     BUSINESS("İşletme"),
     FINANCE_AND_BANKING("Finans ve Bankacılık"),
