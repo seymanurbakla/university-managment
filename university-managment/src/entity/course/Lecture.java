@@ -4,6 +4,7 @@ import entity.util.statics.Department;
 import entity.util.statics.School;
 
 public class Lecture {
+    //Ders bilgilerini içeren sınıf
     private String name;
     private String code;
     private String lecturerName;

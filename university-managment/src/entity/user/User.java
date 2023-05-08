@@ -1,15 +1,10 @@
 package entity.user;
 
-import entity.util.statics.Degree;
-import entity.util.statics.Grade;
-import entity.util.statics.School;
-import entity.util.statics.Type;
+import entity.util.statics.*;
 
 
 public class User {
-
-
-
+    //Kullanıcı bilgilerini içeren class
     private String name;
     private String surname;
     private String mail;
@@ -20,6 +15,7 @@ public class User {
     private Grade grade;
     private Degree degree;
     private School school;
+    //TODO department bilgisi ve ders listesi eklenecek.
 
     public User(String name,String surname,String mail,Type type,int age, long userId,String password,Grade grade,Degree degree,School school){
         this.setName(name);
