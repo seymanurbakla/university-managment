@@ -1,6 +1,8 @@
 package entity.util.statics;
 
-public enum Rank {
+import entity.util.Util;
+
+public enum Rank implements Util{
     //TODO permission listesi eklenecek.
     DEVELOPER("DEVELOPER"),
     STUDENT("STUDENT"),

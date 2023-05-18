@@ -1,6 +1,8 @@
 package entity.util.statics;
 
-public enum Grade {
+import entity.util.Util;
+
+public enum Grade implements Util {
     //Sınıf bilgilerini içeren enum
     ONE(1),
     TWO(2),

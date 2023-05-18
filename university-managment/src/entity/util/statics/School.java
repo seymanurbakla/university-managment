@@ -1,9 +1,11 @@
 package entity.util.statics;
 
+import entity.util.Util;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public enum School {
+public enum School implements Util {
     //Fakülte bilgilerini içeren enum.
     BUSINESS("işletme",new ArrayList<Department>(Arrays.asList(Department.BUSINESS,Department.INTERNATIONAL_TRADE_AND_BUSINESS,Department.MANAGEMENT_INFORMATION_SYSTEM,Department.FINANCE_AND_BANKING))),
 

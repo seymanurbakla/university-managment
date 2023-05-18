@@ -1,6 +1,8 @@
 package entity.util.statics;
 
-public enum Department {
+import entity.util.Util;
+
+public enum Department implements Util {
     //Bölüm bilgilerini içeren enum
     MANAGEMENT_INFORMATION_SYSTEM("Yönetim Bilişim Sistemleri"),
     BUSINESS("İşletme"),

@@ -1,9 +1,10 @@
 package entity.user;
 
-import entity.course.Lecture;
+import entity.util.lecture.Lecture;
 import entity.util.statics.*;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 
 public class User {
@@ -20,9 +21,8 @@ public class User {
     private School school;
     private Department department;
     private ArrayList<Lecture> lectures;
-    //TODO department bilgisi ve ders listesi eklenecek.
-
-    public User(String name, String surname, String mail, Rank rank, int age, long userId, String password, Grade grade, Degree degree, School school,Department department,ArrayList<Lecture> lectures){
+    private HashMap<Days,ArrayList<Lecture>> dailyLectureList;
+    public User(String name, String surname, String mail, Rank rank, int age, long userId, String password, Grade grade, Degree degree, School school,Department department,ArrayList<Lecture> lectures,HashMap<Days,ArrayList<Lecture>> dailyLectureList){
         this.setName(name);
         this.setSurname(surname);
         this.setMail(mail);
@@ -34,7 +34,8 @@ public class User {
         this.setDegree(degree);
         this.setSchool(school);
         this.setDepartment(department);
-
+        this.setLectures(lectures);
+        this.setDailyLectureList(dailyLectureList);
     }
 
     public String getName() {
@@ -121,5 +122,19 @@ public class User {
     }
     public void setDepartment(Department department) {
         this.department = department;
+    }
+    public ArrayList<Lecture> getLectures(){
+        return this.lectures;
+    }
+    public void setLectures(ArrayList<Lecture> lectures){
+        this.lectures = lectures;
+    }
+
+    public HashMap<Days, ArrayList<Lecture>> getDailyLectureList() {
+        return dailyLectureList;
+    }
+
+    public void setDailyLectureList(HashMap<Days, ArrayList<Lecture>> dailyLectureList) {
+        this.dailyLectureList = dailyLectureList;
     }
 }

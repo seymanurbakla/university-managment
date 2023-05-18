@@ -1,10 +1,12 @@
 package entity.util.statics;
 
+import entity.util.Util;
+
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public enum Degree {
+public enum Degree implements Util {
     //Eğitim seviyesini içeren enum
     //Sadece 4 seviye olabilir.Doktora degreesine sahip birisi öğrenci olabilir,
     //ayrıca Doktora öğrencisi olan birisi araştırma görevlisi yani lecturer olabilir.
